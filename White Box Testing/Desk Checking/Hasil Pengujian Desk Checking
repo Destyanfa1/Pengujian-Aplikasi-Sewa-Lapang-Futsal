@@ -1,0 +1,22 @@
+# filename: harga_per_step.py
+
+# Data dari tabel
+data = [
+    {"step": 1, "harga_per_jam": 100000, "durasi_jam": 2},
+    {"step": 2, "harga_per_jam": 75000,  "durasi_jam": 3},
+    {"step": 3, "harga_per_jam": 50000,  "durasi_jam": 1},
+    {"step": 4, "harga_per_jam": 120000, "durasi_jam": 0},
+]
+
+# Header
+print(f"{'Step':<5} {'Input Harga (per jam)':<25} {'Input Durasi (jam)':<20} {'Proses':<20} {'Output Total Harga':<20}")
+print("-" * 90)
+
+# Proses dan output
+for item in data:
+    step = item["step"]
+    harga = item["harga_per_jam"]
+    durasi = item["durasi_jam"]
+    total = harga * durasi
+    proses = f"{harga} * {durasi}"
+    print(f"{step:<5} {harga:<25} {durasi:<20} {proses:<20} {total:<20}")
