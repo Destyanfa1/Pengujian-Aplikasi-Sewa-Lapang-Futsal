@@ -7,10 +7,11 @@
 | TC4 | Mengisi field nomor telepon dengan huruf | System memerintahkan untuk menggunakan angka |
 
 Tujuan Pengujian
-TC1: Menguji bahwa sistem bekerja normal saat semua data registrasi diisi dengan benar.
 
-TC2: Menguji validasi required field — sistem harus memberi tahu jika ada kolom kosong.
+1. TC1: Menguji bahwa sistem bekerja normal saat semua data registrasi diisi dengan benar.
 
-TC3: Menguji pembatasan ukuran file upload — sistem tidak boleh menerima file terlalu besar.
+2. TC2: Menguji validasi required field — sistem harus memberi tahu jika ada kolom kosong.
 
-TC4: Menguji validasi input numerik — sistem harus mendeteksi jika user mengisi huruf di kolom yang seharusnya angka (misalnya nomor telepon).
+3. TC3: Menguji pembatasan ukuran file upload — sistem tidak boleh menerima file terlalu besar.
+
+4. TC4: Menguji validasi input numerik — sistem harus mendeteksi jika user mengisi huruf di kolom yang seharusnya angka (misalnya nomor telepon).
