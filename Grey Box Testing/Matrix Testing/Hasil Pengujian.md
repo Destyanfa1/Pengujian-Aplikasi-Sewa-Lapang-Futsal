@@ -5,12 +5,13 @@ Lama main : Sebentar/Standar/Lama
 
 Tabel Pengujian Kombinasi Nilai Input 
 
+
 | **Test Case** | **Harga** | **Tanggal** | **Waktu** | **Lama main** | **Dokumentasi Hasil Uji** |
 |---------------|-----------|-------------|-----------|----------------|----------------------------|
-| B01           | Murah     | Sekarang    | Pagi      | Sebentar       | <div align="center"><img src="pengujian_matrix_testing.png" alt="ss" width="150"/></div> |
+| B01           | Murah     | Sekarang    | Pagi      | Sebentar       | <div align="center"><img src="assets/pengujian_matrix_testing.png" alt="ss" width="700"/></div> |
 | B02           | Mahal     | Dulu        | Malam     | Lama           |                            |
 | B03           | Normal    | Nanti       | Siang     | Standar        |                            |
 | B04           | Murah     | Nanti       | Siang     | Standar        |                            |
 | B05           | Mahal     | Sekarang    | Siang     | Sebentar       |                            |
-                          
+                     
 
