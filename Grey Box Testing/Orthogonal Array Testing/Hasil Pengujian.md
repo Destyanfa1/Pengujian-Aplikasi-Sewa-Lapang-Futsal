@@ -16,10 +16,8 @@ Pengujian dilakukan untuk memverifikasi sistem berdasarkan kombinasi variabel: *
 
 ### Visualisasi Tabel Uji Coba
 
-#### Orthogonal Array Testing 1
 ![Orthogonal Array Testing 1](ortogonal%20array%20testing%201.png)
 
-#### Orthogonal Array Testing 2
 ![Orthogonal Array Testing 2](ortogonal%20array%20testing%202.png)
 
 ---
