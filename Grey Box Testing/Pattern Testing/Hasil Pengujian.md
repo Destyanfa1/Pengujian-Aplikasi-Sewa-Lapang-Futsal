@@ -19,3 +19,17 @@
 
 > **Catatan:**  
 > Fitur edit pesanan **belum tersedia** sehingga semua skenario terkait pembaruan tidak dapat diuji dan ditandai sebagai **tidak berhasil (❌)**. Penghapusan dan pemesanan berjalan **sesuai ekspektasi**.
+
+## 2. Pengujian Batasan dan Skenario Tidak Terduga
+| **Kode** | **Fitur Dasar** | **Deskripsi**                   | **Dokumentasi**           |
+|------|-------------|-----------------------------|-----------------------|
+| F01  | Pemesanan   | User memesan sewa lapangan | ![](pattern_2_1.png)  |
+
+---
+
+## Hasil Pengujian
+
+| **Hasil Uji**                             | **Checklist** | **Deskripsi**                                                                                                                                   | **Dokumentasi**                                                                                   |
+|--------------------------------------|-----------|---------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
+| Memesan di waktu yang sudah terlewat | ✅        | Pesanan dapat diterima ke tahap pembayaran padahal seharusnya tidak masuk akal. Sistem seharusnya menolak pesanan semacam ini.             | ![](pattern_2_2.png)<br>![](pattern_2_3.png)<br>![](pattern_2_4.png)                         |
+| Memesan dengan durasi 01:59          | ✅        | Harga yang tercantum adalah harga normal untuk 1 jam, bukan hampir 2 jam. Seharusnya sistem menghitung harga secara proporsional per menit.| ![](pattern_2_5.png)                                                                         |
