@@ -26,3 +26,25 @@ Flowchart di atas menjelaskan alur sistem pemesanan lapangan secara terstruktur.
 | Update Jadwal ke Jadwal Lapangan 2| Memperbarui jadwal jika terjadi perubahan        | Setelah penggunaan selesai atau pembatalan      | Jadwal diupdate kembali untuk mengosongkan slot yang sudah selesai dipakai.  |
 | Hapus Jadwal                       | Menghapus jadwal dari sistem jadwal              | Jika durasi = 0                                 | Menghapus pemesanan dari sistem setelah waktu penggunaan selesai.             |
 
+## Dokumentasi Source Code Utama
+
+Berikut adalah cuplikan kode (source code) dari file utama yang digunakan dalam sistem pemesanan lapangan:
+
+### 1. `jadwal.php`
+![Source Code - jadwal.php](jadwal.php.jpeg)
+
+Kode ini menangani penampilan dan logika untuk menampilkan jadwal lapangan kepada pengguna, termasuk validasi ketersediaan berdasarkan tanggal dan durasi.
+
+---
+
+### 2. `lapangan.php`
+![Source Code - lapangan.php](lapangan.php.jpeg)
+
+Kode ini menampilkan daftar lapangan yang tersedia dan memungkinkan pengguna memilih salah satu untuk proses pemesanan.
+
+---
+
+### 3. `bayar.php`
+![Source Code - bayar.php](bayar.php.jpeg)
+
+Kode ini menangani proses pembayaran, termasuk validasi status pembayaran dan update data jadwal setelah transaksi berhasil.
