@@ -1,8 +1,3 @@
-Harga : Murah/Normal/Mahal
-Tanggal : Dulu/Sekarang/Nanti
-Waktu : Pagi/Siang/Malam
-Lama main : Sebentar/Standar/Lama
-
 Tabel Pengujian Kombinasi Nilai Input 
 | **Test Case** | **Harga** | **Tanggal** | **Waktu** | **Lama main** |                               
 | ------------- | --------- | ----------- | --------- | ------------- | 
@@ -11,6 +6,9 @@ Tabel Pengujian Kombinasi Nilai Input
 | B03           | Normal    | Nanti       | Siang     | Standar       |                                                        
 | B04           | Murah     | Nanti       | Siang     | Standar       |                                                        
 | B05           | Mahal     | Sekarang    | Siang     | Sebentar      | 
-
+1. Harga : Murah/Normal/Mahal
+2. Tanggal : Dulu/Sekarang/Nanti
+3. Waktu : Pagi/Siang/Malam
+4. Lama main : Sebentar/Standar/Lama
 **Dokumentasi Hasil Uji**  
 ![Dokumentasi Hasil Uji](pengujian_matrix_testing.png)
