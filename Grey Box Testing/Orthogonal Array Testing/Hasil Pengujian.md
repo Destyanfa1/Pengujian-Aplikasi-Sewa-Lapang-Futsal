@@ -1,4 +1,4 @@
-## 1. Uji Pengujian – Orthogonal Array Testing
+## Uji Pengujian – Orthogonal Array Testing
 
 Pengujian dilakukan untuk memverifikasi sistem berdasarkan kombinasi variabel: **Harga**, **Tanggal**, **Waktu**, dan **Lama Main**. Berikut adalah tabel pengujiannya:
 
@@ -22,6 +22,6 @@ Pengujian dilakukan untuk memverifikasi sistem berdasarkan kombinasi variabel: *
 
 ---
 
-## 2. Kesimpulan
+## Deskripsi
 
 Dokumentasi ini menyajikan alur sistem pemesanan lapangan dari sisi logika bisnis, source code, hingga proses pengujian. Pendekatan sistematis menggunakan flowchart dan orthogonal array memastikan sistem telah diuji secara representatif dan efisien terhadap berbagai kombinasi input.
