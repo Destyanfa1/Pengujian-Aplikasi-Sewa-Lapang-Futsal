@@ -12,4 +12,4 @@ Tabel Pengujian Kombinasi Nilai Input
 4. Lama main : Sebentar/Standar/Lama
 
 **Dokumentasi Hasil Uji**  
-![Dokumentasi Hasil Uji](pengujian_matrix_testing.png)
+![Dokumentasi Hasil Uji](matrix_testing.png)
