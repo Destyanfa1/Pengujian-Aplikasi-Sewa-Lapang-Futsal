@@ -25,4 +25,4 @@ Pengujian Basic Path Testing pada kode kamu bisa dibagi ke 5 jalur eksekusi utam
 | B2    | Login valid user  | Redirect ke `user/lapangan.php`      |
 | B3    | Login gagal       | Tampilkan pesan error & refresh page |
 
-tabel.png
+![tabel](./tabel.png)
