@@ -1,2 +1,9 @@
-|code               | Deskripsi Code|
-|![Screenshot 1](formalinpect1.png)|
+
+| Screenshot | Deskripsi Code |
+|------------|----------------|
+| ![Screenshot 1](formalinpect1.png) | **Tidak ada validasi dan sanitasi input secara eksplisit**<br>- Input dari `$_POST` langsung masuk ke fungsi `daftar()`.<br>- Jika `daftar()` tidak melakukan sanitasi, rawan **SQL Injection** atau **XSS**.<br>- Contoh: `nama`, `email`, `hp` bisa saja mengandung script/karakter berbahaya. |
+| ![Screenshot 2](code2.png) | **Tidak ada pengecekan apakah email atau nomor HP sudah terdaftar sebelumnya**<br>- User bisa mendaftar berkali-kali dengan email/HP yang sama.<br>- Tidak ada feedback jika email sudah digunakan.<br>💡 *Seharusnya ada kode seperti:*<br>`$cek = mysqli_query($conn, "SELECT * FROM users WHERE email = '$email' OR hp = '$hp'");`<br>`if (mysqli_num_rows($cek) > 0) { echo "Email atau No HP sudah terdaftar."; return 0; }` |
+| ![Screenshot 3](code3.png) | **Upload foto tanpa validasi tipe dan ukuran file**<br>- Input `type="file"` belum divalidasi format dan ukuran.<br>- Risiko upload file berbahaya jika tidak dicek.<br>💡 *Saran kode validasi:*<br>`$allowed_ext = ['jpg', 'jpeg', 'png'];`<br>`$file_ext = strtolower(pathinfo($foto['name'], PATHINFO_EXTENSION));`<br>`$file_size = $foto['size'];`<br>Validasi: cek format dan ukuran maksimal 2MB. |
+| ![Screenshot 4](code4.png) | **Penggunaan `meta http-equiv='refresh'` untuk redirect**<br>- Redirect ini fungsional tapi **kurang ideal** untuk user experience.<br>💡 *Lebih baik gunakan:* `header("Location: ../login.php");` setelah kontrol output. |
+| ![Screenshot 5](code5.png) | **Penggunaan `id="exampleInputPassword1"` untuk banyak elemen input**<br>- Semua input punya `id` yang sama padahal harus **unik**.<br>- Bisa ganggu styling dan fungsi JavaScript. |
+| ![Screenshot 6](code6.png) | **Tidak ada feedback jika pendaftaran gagal**<br>- Jika `daftar($_POST)` gagal, tidak ada pesan error.<br>- User jadi tidak tahu penyebab gagalnya pendaftaran. |
