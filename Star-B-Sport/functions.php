@@ -84,7 +84,7 @@ function edit($data)
   $gender = $data["jenis_kelamin"];
   $gambar = $data["foto"];
   $gambarLama = $data["fotoLama"];
- 
+
   // Cek apakah User pilih gambar baru
   if ($_FILES["foto"]["error"] === 4) {
     $gambar = $gambarLama;
@@ -110,7 +110,11 @@ function pesan($data)
 
   $userid = $_SESSION["id_user"];
   $idlpg = $data["id_lpg"];
-  $lama =  $data["jam_mulai"];
+  $lama = $data["jam_mulai"];
+  if (intval($lama) <= 0) {
+    echo "<script>alert('Durasi tidak boleh 0 jam');</script>";
+    return false;
+  }
   $mulai = $data["tgl_main"];
   $mulai_waktu = strtotime($mulai); // mengubah format datetime-local menjadi format UNIX timestamp
   $habis_waktu = $mulai_waktu + (intval($lama) * 3600); // menambahkan waktu dalam menit ke waktu awal
@@ -211,7 +215,7 @@ function editLpg($data)
   $lapangan_212279 = $data["lapangan"];
   $ket = $data["ket"];
   $harga = $data["harga"];
-  $gambarLama =  $data["fotoLama"];
+  $gambarLama = $data["fotoLama"];
 
   // Cek apakah User pilih gambar baru
   if ($_FILES["foto"]["error"] === 4) {
@@ -240,7 +244,7 @@ function tambahAdmin($data)
   $username = $data["username"];
   $password = $data["password"];
   $nama = $data["nama"];
-  $no_handphone= $data["hp"];
+  $no_handphone = $data["hp"];
   $email = $data["email"];
 
   $query = "INSERT INTO admin_212279 (212279_username,212279_password,212279_nama,212279_no_handphone,212279_email) VALUES ('$username','$password','$nama','$no_handphone','$email')";
@@ -257,7 +261,7 @@ function editAdmin($data)
   $username = $data["username"];
   $password = $data["password"];
   $nama = $data["nama"];
-  $no_handphone= $data["hp"];
+  $no_handphone = $data["hp"];
   $email = $data["email"];
 
   $query = "UPDATE admin_212279 SET 
